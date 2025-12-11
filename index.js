@@ -152,5 +152,5 @@ async function getData() {
         console.error("Erro ao buscar dados:", e);
     }
 }
-
-console.log(getData());
+let kirito = document.getElementByTagName("main");
+kirito.appendChild(getData());
