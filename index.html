@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula Mágica</title>
+    <link rel="stylesheet" href="./styles/index.css">
+<body>
+    <header>
+        <h1>Fórmula Mágica</h1>
+    </header>
+    <main id="oi">
+        <table border="1">
+  <tr>
+    <th>Data</th>
+    <th>Where take</th>
+  </tr>
+  <tr>
+    <td>Lucro líquido</td>
+    <td>Balanço patrimonial → Demonstração de Resultado DRE</td>
+  </tr>
+  <tr>
+    <td>Patrimônio Líquido</td>
+    <td>Balanço Patrimonial (BP)</td>
+  </tr>
+  <tr>
+      <td>Divida Líquida</td>
+      <td>Dívida Bruta – Caixa (BP)</td>
+  </tr>
+  <tr>
+      <td>Dividendos Pagos</td>
+      <td>Site da empresa / RI / B3 / StatusInvest / Fundamentei</td>
+  </tr>
+  <tr>
+      <td>Cotação atual</td>
+      <td>B3, Google Finance, TradingView</td>
+  </tr>
+  <tr>
+      <td>Crescimento Esperado</td>
+      <td></td>
+  </tr>
+  <tr>
+      <td>Taxa de Desconto</td>
+      <td></td>
+  </tr>
+</table>
+    <section>
+        Cotação atual	R$ 10,44 <br>
+Patrimônio Líquido (equity)	R$ 18.484.512.000,00 <br>
+Dívida Líquida	R$ 31.552.451.000,00 <br>
+Dividendos por ação (último pagamento)	R$ 0,20 por ação <br>
+Dividendos por ação (média<br> histórica recente — 5 anos)	~ R$ 0,42/ano 
+    </section>
+    <section id="containerCalculadoraMagica">
+        <h2>Calculadora Mágica</h2>
+        <p>Código da Ação</p>
+        <input type="text" name="Código da Empresa" id="CodName">
+        <p>Lucro Líquido</p>
+        <input type="number" name="Lucro líquido" id="lucroLiquido">
+        <p>Patrimônio Líquido</p>
+        <input type="number" name="Patrimônio Líquido" id="patrimonioLiquido">
+        <p>Divida Líquida</p>
+        <input id="dividaLiquida" type="number">
+        <p>Alíquota</p>
+        <input id="aliquota" type="number" placeholder="Imposto (%)">
+        <p>Crescimento Esperado</p>
+        <input type="number" name="Crescimento Esperado" id="crescimento">
+        <p>Dividendos Pagos Por Ação</p>
+        <input type="number" name="Dividendos Pagos" id="divPorAcao">
+        <p>Cotação Atual</p>
+        <input type="number" name="Cotação Atual" id="cotacaoAtual">
+        <p>Taxa de Desconto</p>
+        <input type="number" name="Taxa de Desconto" id="taxaDesconto">
+        <input class="butao" type="button" onclick="start()" value="START">
+    </section>
+    </main>
+    <section id="containerResultados">
+        <table id="tabelaDeResultados">
+            <tr>
+                <th>Código da Ação</th>
+                <th>Cotação Atual</th>
+                <th>Valor justo Teórico</th>
+                <th>Retorno sobre Capital</th>
+                <th>Retorno sobre Capital Investido</th>
+                <th>Retorno sobre Resultados</th>
+                <th>DY</th>
+                <th>Comparação da Cotação Atual em relação ao valor Justo</th>
+            </tr>
+        </table>
+    </section>
+    <script src="./src/index.js"></script>
+</body>
+</html>
